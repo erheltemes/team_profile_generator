@@ -150,14 +150,8 @@ function createhtml() {
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Team Profiles</title>
+                <link rel="stylesheet" href="style.css">
             </head>
-            <style>
-            header {background-color: rgb(184, 81, 81);}
-            h1, h2 {color: white;}
-            main {display: flex}
-            .card {width: 300px; border: black 1px solid;}
-            .title {background-color: rgb(40, 110, 241);} 
-            </style>
             <body>
                 <header>
                     <h1>My Team</h1>
@@ -171,17 +165,18 @@ function createhtml() {
 
 function managerCards() {
     let card = 
-    `<div class="card">
-        <div class="title">
-            ${manager.getName()}
-            ${manager.getRole()}
-        </div>
-        <div class="details">
-            ${manager.getId()}
-            ${manager.getEmail()}
-            ${manager.getOfficeNumber()}
-        </div>
-    </div>\n`
+                    `
+                    <div class="card">
+                        <div class="title">
+                            ${manager.getName()}
+                            ${manager.getRole()}
+                        </div>
+                        <div class="details">
+                            ${manager.getId()}
+                            ${manager.getEmail()}
+                            ${manager.getOfficeNumber()}
+                        </div>
+                    </div>`
     return card
 }
 
@@ -189,17 +184,18 @@ function engineerCards() {
     let cardArray = []
     engineers.forEach(engineer => {
     let cardPush =  
-    `<div class="card">
-        <div class="title">
-            ${engineer.getName()}
-            ${engineer.getRole()}
-        </div>
-        <div class="details">
-            ${engineer.getId()}
-            ${engineer.getEmail()}
-            ${engineer.getGithub()}
-        </div>
-    </div>\n`
+                    `
+                    <div class="card">
+                        <div class="title">
+                            ${engineer.getName()}
+                            ${engineer.getRole()}
+                        </div>
+                        <div class="details">
+                            ${engineer.getId()}
+                            ${engineer.getEmail()}
+                            ${engineer.getGithub()}
+                        </div>
+                    </div>`
     cardArray.push(cardPush)
     })
     return cardArray.join("")
@@ -209,17 +205,18 @@ function internCards() {
     let cardArray = []
     interns.forEach(intern => {
     let cardPush =  
-    `<div class="card">
-        <div class="title">
-            ${intern.getName()}
-            ${intern.getRole()}
-        </div>
-        <div class="details">
-            ${intern.getId()}
-            ${intern.getEmail()}
-            ${intern.getSchool()}
-        </div>
-    </div>\n`
+                    `
+                    <div class="card">
+                        <div class="title">
+                            ${intern.getName()}
+                            ${intern.getRole()}
+                        </div>
+                        <div class="details">
+                            ${intern.getId()}
+                            ${intern.getEmail()}
+                            ${intern.getSchool()}
+                        </div>
+                    </div>\n`
     cardArray.push(cardPush)
     })
     return cardArray.join("")

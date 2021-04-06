@@ -16,7 +16,7 @@ describe("engineer", () => {
         const engineerObj = new Engineer("george", 5, "email@gmail.com", "georgehub")
   
         expect(engineerObj.getName()).toEqual(`<h2>george</h2>`)
-        expect(engineerObj.getId()).toEqual(`<p>Email: 5</p>`)
+        expect(engineerObj.getId()).toEqual(`<p>ID: 5</p>`)
         expect(engineerObj.getEmail()).toEqual(`<p>Email: email@gmail.com</p>`)
         expect(engineerObj.getRole()).toEqual(`<h2>Engineer</h2>`)
         expect(engineerObj.getGithub()).toEqual(`<p>GitHub: <a src='https://github.com/georgehub'>georgehub</a></p>`)
