@@ -14,4 +14,4 @@
 
 [VideoLink](https://drive.google.com/file/d/14dkDw1cAxr4X6nwdmDoBS7LfUCfq1VAh/view?usp=sharing)
 
-SITE LINK: https://erheltemes.github.io/team_profile_generator/
+
